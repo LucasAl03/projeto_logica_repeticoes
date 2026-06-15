@@ -43,8 +43,13 @@ const inputNumRepeticao = document.querySelector('#numRepeticao')
 const btnExibir = document.querySelector(`#btn-exibir`)
 const divResultFrase = document.querySelector(`#result-frase`)
 
-btnExibir.addEventListener('click', (evt)=>{
-    
+let contFrase = 0
+let totalRepeticao = Number(inputNumRepeticao.value)
 
-    divResultFrase.innerHTML
+btnExibir.addEventListener('click', (evt)=>{
+    while(totalRepeticao > contFrase){
+        divResultFrase.innerHTML = `${inputFrase.value} <br>`
+
+        contFrase++
+    }
 })
