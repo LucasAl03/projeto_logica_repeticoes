@@ -40,16 +40,17 @@ btnNum1.addEventListener('click', (evt)=>{
 //Repetição com While
 const inputFrase = document.querySelector('#msg')
 const inputNumRepeticao = document.querySelector('#numRepeticao')
-const btnExibir = document.querySelector(`#btn-exibir`)
+const btnExibir = document.querySelector('#btn-exibir')
 const divResultFrase = document.querySelector(`#result-frase`)
 
 let contFrase = 0
 let totalRepeticao = Number(inputNumRepeticao.value)
 
 btnExibir.addEventListener('click', (evt)=>{
-    while(totalRepeticao > contFrase){
-        divResultFrase.innerHTML = `${inputFrase.value} <br>`
+    totalRepeticao = Number(inputNumRepeticao.value)
 
+    while(totalRepeticao > contFrase){
+        divResultFrase.innerHTML +=`${contFrase + 1} - ${inputFrase.value} <br>`
         contFrase++
     }
 })
