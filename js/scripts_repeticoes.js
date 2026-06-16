@@ -54,3 +54,35 @@ btnExibir.addEventListener('click', (evt)=>{
         contFrase++
     }
 })
+
+//Coleção de Dados - ARRAY
+transporte = ['Bicicleta', 'Moto', 'Ônibus', 'Avião']
+
+for (i = 0; i < transporte.length; i++){
+    console.log(transporte[i])
+}
+
+//For In
+const divForin = document.querySelector('#div-forin')
+
+for(let pos in transporte){
+    // console.log(transporte[pos])
+    divForin.innerHTML += `${transporte[pos]} <br>`
+}
+
+//For Of
+const divForOf = document.querySelector('#div-forof')
+
+for(let elem of transporte){
+    divForOf.innerHTML += `${elem} <br>`
+}
+
+//Coleção de Pessoas - Array de Objeto
+const pessoas = [
+    {nome: 'Maria', idade: 18, renda: 1500 },
+    {nome: 'Josefina', idade: 23, renda: 1800 },
+    {nome: 'Chicó', idade: 32, renda: 1.50 },
+    {nome: 'João Grilo', idade: 34, renda: 2.20 },
+]
+
+//ForEach
