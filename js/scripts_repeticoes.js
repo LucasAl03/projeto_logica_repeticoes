@@ -85,4 +85,16 @@ const pessoas = [
     {nome: 'João Grilo', idade: 34, renda: 2.20 },
 ]
 
-//ForEach
+console.log('----------LISTA POR FOR IN----------')
+for(let indiceObjPessoa in pessoas){
+    console.log(pessoas[indiceObjPessoa].nome, pessoas[indiceObjPessoa].idade, pessoas[indiceObjPessoa].renda)
+}
+
+console.log('----------LISTA POR FOR OF----------')
+for(let pessoa of pessoas){
+    console.log(pessoa.nome, pessoa.idade, pessoa.renda)
+}
+
+//FOREACH
+const divForeach = document.querySelector('#div-foreach')
+
